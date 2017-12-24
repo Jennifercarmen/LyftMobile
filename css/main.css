@@ -1,0 +1,80 @@
+/* Clases Especificas */
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Helpers */
+
+
+.inline {
+    display: inline;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+
+
+.textcenter {
+    text-align: center;
+}
+
+.left {
+    padding-left: 0px;
+}
+
+.right {
+    padding-right: 0px;
+}
+
+
+
+.textuppercase {
+    text-transform: uppercase;
+}
+
+.view-mobile {
+    display: block;
+}
+
+.view-desktop {
+    display: none;
+}
+
+
+
+
+
+
+/* section 1 */
+
+section:first-of-type {
+      background: linear-gradient(to bottom right, #711367,  #de1f85);
+
+    height: 540px;
+}
+
+
+
+/* @media querys */
+
+@media (min-width: 768px) {
+
+    /* ****** */
+    .view-mobile {
+        display: none;
+    }
+    .view-desktop {
+        display: block;
+    }
+    .modal-sm {
+        width: 480px;
+    }
+    .modal-lg {
+        width: 480px;
+    }
+}
+
