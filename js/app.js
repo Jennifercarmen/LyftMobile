@@ -8,6 +8,17 @@ $(document).ready(function () {
 
     });
 // Sign up
+function generatecode(chars, lengthc){
+  code = "LAB-";
+  for (x=0; x < lengthc; x++)
+  {
+  rand = Math.floor(Math.random()*chars.length);
+  code += chars.substr(rand, 1);
+  }
+  return code;
+  }
+
+
 var $number = $('#inputNumber');
 
 var validatenumber = false;
@@ -33,5 +44,12 @@ $number.on('input', function(event) {
       }
 });
 
+$("#signup").click(function () {
+
+    
+    caracteres = "0123456789";
+    longitud = 3;
+    
+    alert(generatecode(caracteres, longitud));});
 });
 
