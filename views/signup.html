@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="../css/main.css">
 	<title>SingUp</title>
 </head>
-
 <body>
 	<div class="container">
 		<div class="row ">
@@ -29,7 +28,6 @@
 					<option value="4">Mexico</option>
 				</select>
 				<input type="text" id="inputNumber">
-
 			</div>
 			<div class="container">
 
@@ -44,10 +42,30 @@
 		
 			<br>
 			<br>
-			<button type="submit" id="signup" class="btn btn-success" disabled> SignUp </button>
+			<button type="button"  id="signup" class="btn btn-success" data-toggle="modal" data-target="#myModal" disabled> SignUp </button>
+
 		</form>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Codigo de Confirmación</h4>
+				</div>
+				<div class="modal-body">
+					<p>Tu código de verificación es <span id="code"></span></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+				</div>
+			</div>
+		</div>
+	</div>
     <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+
     <script src="../js/app.js"></script>
 
 </body>

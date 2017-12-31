@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  $(".home").show();
+
     setTimeout(function () {
         $(".splash").hide();
         $(".home").show();
@@ -49,7 +51,8 @@ $("#signup").click(function () {
     
     caracteres = "0123456789";
     longitud = 3;
-    
-    alert(generatecode(caracteres, longitud));});
+    $('#code').append(generatecode(caracteres, longitud));
+
+  });
 });
 
