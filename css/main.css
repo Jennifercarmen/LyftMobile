@@ -53,11 +53,24 @@ body {
 
 section:first-of-type {
       background: linear-gradient(to bottom right, #711367,  #de1f85);
+      height: 100vh;
+  
+    }
 
-    height: 540px;
+       .vertical-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+
+/* Home */
+.home{
+    background-image: url('../assets/images/background.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center 93%;
+    background-size: cover;
 }
-
-
 
 /* @media querys */
 
