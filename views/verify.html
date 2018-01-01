@@ -14,54 +14,39 @@
     <div class="container">
             <div class="row">
                     <div class="col-xs-12">
-                        <h4>Verify your code</h4>
+                        <h3>Verify Phone Number</h3>
+                        <h4>Join now for free ride credit</h4>
                     </div>
                 </div>
+                
     </div>
+    <hr>
     <div class="container">
 
     <div class="row">
-        <div class="input-field col s6 offset-s3">
-            <input id="input_code" type="number" data-length="4">
-            <label for="input_number" data-error="4 digit code" data-success="right">Validation Code</label>
+        <div class="col-xs-12">
+            <input id="input_code" type="number">
         </div>
     </div>
+    <div class="row">
+        <h5>Enter the code sent to +52</h5>
+    <button type="button" class="btn btn-default" id="accept" disabled>
+        Resend code
+    </button>
+</div>
     </div>
     <div class="container">
     <div class="row ">
         <div class="col-xs-12">
-            <a id="validate" class=" next  btn-large disabled modal-trigger" href="#profile">NEXT</a>
+
+            <a>NEXT</a>
         </div>
-        <div id="profile" class="modal container">
-            <div class="modal-content">
-                <h4>Sign Up</h4>
-                <p>Join for free ride credit</p>
-                <div class="input-field">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input id="name" type="text" class="validate">
-                    <label for="icon_prefix">Name</label>
-                </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">mail</i>
-                    <input id="email" type="email" class="validate">
-                    <label for="email">Email</label>
-                </div>
-                <form action="#">
-                    <p>
-                        <input type="checkbox" id="test5" />
-                        <label for="test5">Agree with terms and conditions</label>
-                    </p>
-                </form>
-            </div>
-            <div class="modal-footer col s12">
-                <a id="finish" class=" next waves-effect waves-light btn-large disabled modal-action modal-close">NEXT</a>
-            </div>
-        </div>
+        
     </div>
 </div>
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="../js/verify.js"></script>
 
 </body>
 
