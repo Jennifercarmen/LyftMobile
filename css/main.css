@@ -1,93 +1,95 @@
 /* Clases Especificas */
 
 body {
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
 
 /* Helpers */
 
-
-.inline {
-    display: inline;
+.row {
+  margin-bottom: 0px;
 }
 
-.bold {
-    font-weight: 600;
+hr {
+  width: 90%;
+  height: 1px;
+  border: 0;
+  background-color: #d6d2d2;
 }
 
-
-
-.textcenter {
-    text-align: center;
+.btn,
+.btn-large {
+  background-color: #ea0b8c;
+  font-weight: bold;
+  width: 200px;
 }
 
-.left {
-    padding-left: 0px;
+.center {
+  margin: 0 auto;
+  display: flex;
 }
 
-.right {
-    padding-right: 0px;
+.back {
+  margin-top: 40px;
+  font-size: 30px;
+  border-radius: 50%;
+  border: 1px solid;
+  font-weight: bold;
 }
 
-
-
-.textuppercase {
-    text-transform: uppercase;
+.larg {
+  position: absolute;
+  top: -20px;
+  left: 90px;
+  color: white;
 }
 
-.view-mobile {
-    display: block;
+/* css index */
+
+.splash {
+  background: linear-gradient(to bottom right, #711367, #de1f85);
+  height: 100vh;
 }
 
-.view-desktop {
-    display: none;
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-
-
-
-/* section 1 */
-
-section:first-of-type {
-      background: linear-gradient(to bottom right, #711367,  #de1f85);
-      height: 100vh;
-  
-    }
-
-       .vertical-center{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-       }
 
 /* Home */
-.home{
-    background-image: url('../assets/images/background.jpg');
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center 93%;
-    background-size: cover;
+
+.home {
+  background-image: url('../assets/images/background.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center 93%;
+  background-size: cover;
 }
 
-/* @media querys */
-
-@media (min-width: 768px) {
-
-    /* ****** */
-    .view-mobile {
-        display: none;
-    }
-    .view-desktop {
-        display: block;
-    }
-    .modal-sm {
-        width: 480px;
-    }
-    .modal-lg {
-        width: 480px;
-    }
+.links {
+  position: absolute;
+  bottom: 50px;
 }
 
+.links a {
+  border: 1px solid white;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Sign up */
+
+.title {
+  font-weight: bold;
+}
+
+/* Verify */
+#resend_code {
+  background-color: #6f446c;
+}

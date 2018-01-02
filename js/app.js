@@ -1,14 +1,9 @@
 $(document).ready(function () {
-  $(".home").show();
 
     setTimeout(function () {
-        $(".splash").hide();
-        $(".home").show();
-    }, 3000);
-    $(".signUp").click(function () {
-        window.location.href = 'views/signup.html';
+      window.location.href = 'views/home.html';
+    }, 2200);
 
-    });
 
 });
 

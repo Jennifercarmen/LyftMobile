@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="shortcut icon" href="../assets/images/favicon.ico">
+  <!-- material-icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../vendors/materialize/css/materialize.css" />
+  <!-- main.css-->
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <title>Registro</title>
+</head>
+
+<body>
+    <div class="row ">
+        <div class="col s3 ">
+         <a href="verify.html"><i class="material-icons prefix  back">keyboard_arrow_left</i></a> 
+        </div>
+    
+        <div class="col s9 ">
+            <h2 class="title">Sign Up</h2>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <p class="center-align">Join now for free ride credit</p>
+        </div>
+      </div>
+      <hr>
+ 
+  <form class="container-flex-column text-center">
+
+    <div class="row">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="first_name" type="text" class="validate">
+        <label for="first_name">First Name</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="last_name" type="text" class="validate">
+        <label for="last_name">Last Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">mail</i>
+        <input id="inputEmail" type="email" class="validate">
+        <label for="email">Email</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <p>
+          <input type="checkbox" id="test5" />
+          <label for="test5">Agree with terms and conditions</label>
+        </p>
+
+      </div>
+    </div>
+
+    <br>
+    <button type="button" id="signup" class="btn btn-success center" disabled><span class="center">SignUp </span> </button>
+  </form>
+  <!-- Materialize core JavaScript -->
+
+  <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../vendors/materialize/js//materialize.min.js"></script>
+  <script src="../js/register.js"></script>
+</body>
+
+</html>
